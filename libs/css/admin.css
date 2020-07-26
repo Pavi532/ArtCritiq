@@ -1,0 +1,89 @@
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #209CEE;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: auto;
+}
+.sidebar a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #209CEE;
+}
+a.nav-link.active {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: #209CEE;
+}
+a.sItem, a.cItem{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: right;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-weight: bolder;
+    text-decoration-line: none;
+}
+.sidebar p{
+    color:white;
+}
+#dashmini {
+    /* overflow: auto;
+    position: fixed; */
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        width:100vh;
+    }
+    .sidebar {
+        width: 100%;
+        height: max-content;
+        padding-top: 0;
+    }
+    .sidebar-sticky{
+        height: auto;
+    }
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .sidebar-sticky br{
+        display: none;
+    }
+    .sidebar-sticky p{
+        position: relative;
+        text-align: center;
+    }
+    #dashmini{
+        position: relative;
+        left: 0;
+        max-width: 100vh;
+    }
+    div.content {margin-left: 0;}
+
+}
+@media screen and (max-width: 576px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+@media screen and (max-width: 250px){
+    body{
+        min-width:250px;        /* Suppose minimum width is 250px */
+        width: auto !important;  /* Firefox will set width as auto */
+        width:250px;            /* Since IE6 ignores !important it will set width as 250px; */
+    }
+}

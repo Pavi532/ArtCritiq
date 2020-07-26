@@ -1,0 +1,23 @@
+<?php
+    $host = "localhost";
+    $db_name = "artcritiqdb";
+    $username = "root";
+    $password = "root";
+
+    $conn=mysqli_connect($host,$username,$password,$db_name);
+    if(!$conn){
+        die("Could Not Connect".mysqli_connect_error());
+    }
+    else{
+        $id = $_POST['id'];
+        $upvote_query = "UPDATE critiques SET cre_vote = '1'  WHERE id=$id";
+        $upvote_result = mysqli_query($conn,$upvote_query);
+        if($upvote_result){
+            echo "Awarded";
+        }
+        else{
+            echo ("ERROR:\n".mysqli_error($conn));
+        }
+        mysqli_close($conn);
+    }
+?>

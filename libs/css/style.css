@@ -1,0 +1,94 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#load{
+    margin-top: 56px;
+}
+h1{
+    color: #209CEE;
+    text-align: center;
+}
+
+#reg{
+    position: fixed;
+    top: 4em;
+}
+.logstart{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    /* color: rgb(255, 255, 255); */
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: transparent;
+}
+.logo{
+    margin-top: 8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin{
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#jtable{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: none;
+}
+#jtable td{
+    border: none;
+    vertical-align: middle;
+}
+.jtname{
+    text-align: right;
+    color: white;
+    
+}
+
+.alCourse{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alTopic{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
